@@ -1,0 +1,10 @@
+# Site settings
+title: 深圳实验学校高中部创客社
+description: 一群神经病
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://szesmaker.org" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
