@@ -1,76 +1,113 @@
 body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", "Microsoft Yahei", "Noto Sans CJK", sans-serif;
     margin: 0;
+    background-color: #f8f8f8;
 }
 
 header {
-    background-color: #f8f8f8;
-    margin-bottom: 1em;
+    background-color: #BBDEFB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-.brand {
-    font-size: 0.75em;
-    text-align: left;
+header#navbar-container {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
 }
 
-nav {
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    header#navbar-container {
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+    header#navbar-container {
+        height: 56px;
+    }
+}
+
+header a {
     display: inline-block;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-nav li {
-    display: inline-block;
-    padding: 0.5em;
-}
-
-nav li.active {
-    background-color: white;
-}
-
-nav a {
-    font-size: 150%;
-    color: #777;
     text-decoration: none;
 }
 
-header .text {
-    float: right;
-    padding: 0.5em;
+header a#logo-link {
+    height: 75%;
 }
 
-form.login-form div {
-    margin: 1em;
+#logo {
+    height: 100%;
 }
 
-form .title {
-    width: 8em;
-    float: left;
-    text-align: right;
-    padding-right: 0.5em;
+
+#org-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-form .submit {
-    text-align: right;
+#org-name {
+    margin-left: 4px;
+    color: #202a74;
+    font-family: "Source Code Pro", Consolas, Monaco, monospace;
+    font-size: 1.8em;
 }
 
-ul.date-list {
-    display: inline-block;
+#navbar-container .text a {
+    color: #37474F;
 }
 
-table.menu {
-    border-collapse: collapse;
-    margin-bottom: 0.5em;
+#content {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
 }
 
-table.menu th, td {
-    border: 1px solid black;
+#wrapper {
+    background-color: white;
+    width: 75%;
 }
 
-.not-order {
-    float: right;
+/*
+#content p {
+    text-indent: 2em;
+}
+*/
+
+#content p>img {
+    width: 100%;
+    /*margin-left: -2em;*/
+}
+
+footer {
+    background-color: white;
+    height: 2.5em;
+    padding: 0 2em;
+    margin-top: 0.5em;
+}
+
+footer img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+footer a {
+    color: #37474F;
+}
+
+@media (max-width: 360px) {
+    #org-name {
+        display: none;
+    }
+
+    #wrapper {
+        width: 100%
+    }
+
+    footer {
+        padding: 0;
+    }
 }
