@@ -58,6 +58,7 @@ header a#logo-link {
 
 #navbar-container .text a {
     color: #37474F;
+    text-decoration: underline;
 }
 
 #content {
