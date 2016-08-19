@@ -5,15 +5,15 @@ body {
 }
 
 header {
-    background-color: #BBDEFB;
+    background-color: #1a2064;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 header#navbar-container {
-    padding: 0 1em;
+    padding: 0 2em;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 64px;
 }
 
@@ -49,22 +49,15 @@ header a#logo-link {
     height: 100%;
 }
 
-#org-name {
-    margin-left: 4px;
-    color: #202a74;
-    font-family: "Source Code Pro", Consolas, Monaco, monospace;
-    font-size: 1.8em;
-}
-
 #navbar-container .text a {
-    color: #37474F;
+    color: #BDBDBD;
     text-decoration: underline;
 }
 
 #content {
     display: flex;
     justify-content: center;
-    padding-top: 1em;
+    padding-top: 1.5em;
 }
 
 #wrapper {
@@ -100,15 +93,17 @@ footer a {
 }
 
 @media (max-width: 360px) {
-    #org-name {
-        display: none;
-    }
-
     #wrapper {
         width: 99%
     }
 
     footer {
         padding: 0 1px;
+    }
+}
+
+@media (max-width: 400px) {
+    header#navbar-container {
+        padding: 0 1em;
     }
 }
