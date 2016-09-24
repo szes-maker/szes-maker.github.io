@@ -92,7 +92,7 @@ footer a {
     color: #37474F;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 600px) {
     #wrapper {
         width: 99%
     }
