@@ -108,3 +108,8 @@ footer a {
 .post img {
     width: 100%;
 }
+
+.post-content {
+    font-size: 16em;
+    line-height: 1.6em;
+}
